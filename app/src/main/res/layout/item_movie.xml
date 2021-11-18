@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_movie_height"
+    android:padding="@dimen/item_movie_padding">
+
+    <ImageView
+        android:id="@+id/item_movie_poster"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/item_movie_marginBottom"
+        app:layout_constraintBottom_toTopOf="@+id/item_movie_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/item_movie_title"
+        android:layout_width="@dimen/item_movie_title_width"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/item_movie_title_marginBottom"
+        android:maxLines="2"
+        android:textSize="@dimen/item_movie_title_textSize"
+        app:layout_constraintBottom_toTopOf="@+id/item_movie_date"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Starwars: The rise of skywalker" />
+
+    <TextView
+        android:id="@+id/item_movie_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/item_movie_date_textSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="18 DEC 2020" />
+
+    <TextView
+        android:id="@+id/item_movie_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/item_movie_rating_textSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_movie_poster"
+        tools:text="7.26" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

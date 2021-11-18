@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/fragment_movie_padding_horizontal"
+    android:paddingTop="@dimen/fragment_movie_padding_top">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/fragment_movie_poster_IV"
+            android:layout_width="@dimen/fragment_movie_poster_width"
+            android:layout_height="@dimen/fragment_movie_poster_height"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/fragment_movie_title_TV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/fragment_movie_title_margin_start"
+            android:textSize="@dimen/fragment_movie_title_textSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/fragment_movie_poster_IV"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Lorem ipsum dolor sit amet." />
+
+        <TextView
+            android:id="@+id/fragment_movie_rating_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fragment_movie_rating_marginTop"
+            android:textSize="@dimen/fragment_movie_rating_textSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/fragment_movie_poster_IV"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_movie_title_TV"
+            tools:text="7.26" />
+
+        <TextView
+            android:id="@+id/fragment_movie_date_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fragment_movie_date_marginTop"
+            android:textSize="@dimen/fragment_movie_date_textSize"
+            app:layout_constraintEnd_toEndOf="@+id/fragment_movie_rating_TV"
+            app:layout_constraintStart_toStartOf="@+id/fragment_movie_rating_TV"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_movie_rating_TV"
+            tools:text="18 DEC 2020" />
+
+        <TextView
+            android:id="@+id/fragment_movie_overview_TV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_movie_poster_IV"
+            tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo massa id ullamcorper dignissim. Quisque a suscipit mi. Nunc sit amet rutrum sem, auctor pharetra odio. Sed eget ex sit amet turpis sodales volutpat. In pretium nisl sed dui laoreet tincidunt. Nunc vel feugiat dui. Ut est eros, vulputate quis ex nec, dictum ullamcorper mi. Mauris placerat ipsum vel nulla egestas consequat. Curabitur fermentum nisl in scelerisque venenatis. Quisque est risus, volutpat id vestibulum eget, laoreet at velit. Nullam vel pharetra nunc, sed hendrerit lorem." />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

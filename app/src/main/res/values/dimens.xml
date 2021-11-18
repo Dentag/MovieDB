@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fragment_movie_padding_horizontal">20dp</dimen>
+    <dimen name="fragment_movie_padding_top">20dp</dimen>
+    <dimen name="fragment_movie_poster_width">150dp</dimen>
+    <dimen name="fragment_movie_poster_height">300dp</dimen>
+    <dimen name="fragment_movie_title_margin_start">16dp</dimen>
+    <dimen name="fragment_movie_title_textSize">20sp</dimen>
+    <dimen name="fragment_movie_rating_marginTop">20dp</dimen>
+    <dimen name="fragment_movie_rating_textSize">28sp</dimen>
+    <dimen name="fragment_movie_date_marginTop">8dp</dimen>
+    <dimen name="fragment_movie_date_textSize">18sp</dimen>
+    <dimen name="item_movie_height">400dp</dimen>
+    <dimen name="item_movie_padding">20dp</dimen>
+    <dimen name="item_movie_marginBottom">20dp</dimen>
+    <dimen name="item_movie_title_width">200dp</dimen>
+    <dimen name="item_movie_title_marginBottom">8dp</dimen>
+    <dimen name="item_movie_title_textSize">20sp</dimen>
+    <dimen name="item_movie_date_textSize">18sp</dimen>
+    <dimen name="item_movie_rating_textSize">28sp</dimen>
+</resources>
